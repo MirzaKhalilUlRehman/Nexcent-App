@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 30px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header .logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #263238;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+.header .logo:hover{
+    color: #4caf4f;
+}
+
+.header .nav-links{
+    display: flex;
+    gap: 28px;
+}
+
+.header .nav-links a{
+    color: #4d4d4d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.header .nav-links a:hover{
+    color: #4caf4f;
+}
+
+.header .nav-links a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #4caf4f;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+
+.header .nav-links a:hover::after{
+    width: 100%;
+}
+
+.btns{
+    display: flex;
+    gap: 12px;
+}
+
+.btns .btn{
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btns .login-btn{
+    background-color: transparent;
+    color: #4caf4f;
+    border: 1px solid #4caf4f;
+}
+
+.btns .login-btn:hover{
+    background-color: #4caf4f;
+    color: white;
+}
+
+.btns .signup-btn{
+    background-color: #4caf4f;
+    color: white;
+    border: 1px solid #4caf4f;
+}
+
+.btns .signup-btn:hover{
+    background-color: white;
+    color: #4caf4f;
+    border-color: #3d9d40;
+}
+
+@media (max-width: 768px){
+    .header{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .header .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btns{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
