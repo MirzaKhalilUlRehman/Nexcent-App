@@ -28,3 +28,6 @@
     "vite": "^8.0.10"
   }
 }
+"dependencies": {
+  "vite": "^5.0.0"     // ← YEH LINE ADD KARO
+}
