@@ -15,6 +15,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 18px 30px;
+    width: 100%;
 }
 
 .header{
@@ -121,6 +122,7 @@ body{
 
 .Hero-Section-Text{
     max-width: 600px;
+    width: 100%;
 }
 
 .Hero-Section-Text h1{
@@ -159,8 +161,13 @@ body{
     background-color: #3d9d40;
 }
 
+.Hero-Section-Image{
+    width: 100%;
+    max-width: 500px;
+}
+
 .Hero-Section-Image img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
@@ -226,6 +233,7 @@ body{
     border-radius: 10px;
     padding: 20px;
     width: 300px;
+    max-width: 100%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219);
     transition: 0.3s ease;
@@ -258,6 +266,7 @@ body{
 
 .connection-section .connection-text{
     max-width: 600px;
+    width: 100%;
 }
 
 .connection-section .connection-text h4{
@@ -296,6 +305,7 @@ body{
 
 .achivement-section .achivement-text{
     max-width: 600px;
+    width: 100%;
 }
 
 .achivement-section .achivement-text h3{
@@ -313,8 +323,10 @@ body{
 
 .achivement-section .achivements{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     gap: 20px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .achivement-section .achivements .achivement-card{
@@ -336,18 +348,21 @@ body{
     margin-bottom: 15px;
     text-align: center;
 }
+
 .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 20px;
 }
-
 
 .footer h5{
     font-size: 20px;
     color:black;
     margin-bottom: 20px;
 }
+
 .footer button{
     padding: 12px 28px;
     border-radius: 6px;
@@ -360,6 +375,15 @@ body{
     transition: 0.3s ease;
 }
 
+@media (max-width: 992px){
+    .Hero-Section-Text h1{
+        font-size: 40px;
+    }
+    .Hero-Section-Text h1 span{
+        font-size: 32px;
+    }
+}
+
 @media (max-width: 768px){
     .header{
         flex-direction: column;
@@ -367,26 +391,16 @@ body{
     }
 
     .header .nav-links{
-        flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
 
     .btns{
         justify-content: center;
-        flex-wrap: wrap;
     }
 
-    .Hero-Section{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .connection-section{
-        flex-direction: column;
-        text-align: center;
-    }
-
+    .Hero-Section,
+    .connection-section,
     .achivement-section{
         flex-direction: column;
         text-align: center;
