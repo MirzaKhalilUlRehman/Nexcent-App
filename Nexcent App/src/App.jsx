@@ -14,6 +14,7 @@ function App() {
       <Community />
       <Connection />
       <Achivements />
+      <Connection/>
     </>
   );
 }
