@@ -210,3 +210,54 @@ body{
     gap: 150px;
     flex-wrap: wrap;
 }
+.Community_Section{
+    padding: 20px 0;
+}
+.Community_Section h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #4caf4f;
+    margin-bottom: 15px;
+}
+.Community_Section p{
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+.Community_Section_Cards{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    flex-wrap: wrap;
+}
+.Community_Section_Cards .card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219);
+    transition: 0.3s ease;
+}
+.Community_Section_Cards .card:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.Community_Section_Cards .card h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #263238;
+    margin-bottom: 15px;
+}
+.Community_Section_Cards .card p{
+    font-size: 16px;
+    color: #555;
+}
+@media (max-width: 768px){
+    .Community_Section_Cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
