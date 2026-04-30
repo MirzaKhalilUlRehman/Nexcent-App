@@ -5,6 +5,7 @@ import ClintsSection from "./Nexcent Component/Clints Section";
 import Community from "./Nexcent Component/Community";
 import Connection from "./Nexcent Component/Connection";
 import Achivements from "./Nexcent Component/Achivements";
+import Footer from "./Nexcent Component/Footer";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <Connection />
       <Achivements />
       <Connection/>
+      <Footer />
     </>
   );
 }
