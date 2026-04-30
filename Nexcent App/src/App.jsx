@@ -4,6 +4,7 @@ import HeroSection from "./Nexcent Component/HeroSection";
 import ClintsSection from "./Nexcent Component/Clints Section";
 import Community from "./Nexcent Component/Community";
 import Connection from "./Nexcent Component/Connection";
+import Achivements from "./Nexcent Component/Achivements";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <ClintsSection />
       <Community />
       <Connection />
+      <Achivements />
     </>
   );
 }
