@@ -14,7 +14,7 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 18px 20px;
+    padding: 18px 30px;
 }
 
 .header{
@@ -25,31 +25,39 @@ body{
     flex-wrap: wrap;
 }
 
-.logo{
-    font-size: 26px;
+.header .logo{
+    font-size: 28px;
     font-weight: 700;
     color: #263238;
     text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
 }
 
-.nav-links{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.nav-links a{
-    color: #4d4d4d;
-    text-decoration: none;
-    font-size: 15px;
-    position: relative;
-}
-
-.nav-links a:hover{
+.header .logo:hover{
     color: #4caf4f;
 }
 
-.nav-links a::after{
+.header .nav-links{
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.header .nav-links a{
+    color: #4d4d4d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.header .nav-links a:hover{
+    color: #4caf4f;
+}
+
+.header .nav-links a::after{
     content: "";
     position: absolute;
     width: 0;
@@ -57,158 +65,340 @@ body{
     background: #4caf4f;
     left: 0;
     bottom: -5px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-.nav-links a:hover::after{
+.header .nav-links a:hover::after{
     width: 100%;
 }
 
 .btns{
     display: flex;
-    gap: 10px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
-.btn{
-    padding: 10px 20px;
+.btns .btn{
+    padding: 10px 22px;
     border-radius: 6px;
-    font-size: 14px;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-.login-btn{
-    border: 1px solid #4caf4f;
+.btns .login-btn{
+    background-color: transparent;
     color: #4caf4f;
-    background: transparent;
+    border: 1px solid #4caf4f;
 }
 
-.signup-btn{
-    background: #4caf4f;
+.btns .login-btn:hover{
+    background-color: #4caf4f;
     color: white;
-    border: none;
+}
+
+.btns .signup-btn{
+    background-color: #4caf4f;
+    color: white;
+    border: 1px solid #4caf4f;
+}
+
+.btns .signup-btn:hover{
+    background-color: white;
+    color: #4caf4f;
+    border-color: #3d9d40;
 }
 
 .Hero-Section{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: space-around;
     padding: 60px 0;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .Hero-Section-Text{
-    flex: 1;
-    min-width: 280px;
+    max-width: 600px;
 }
 
 .Hero-Section-Text h1{
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-.Hero-Section-Text h1 span{
-    color: #4caf4f;
-    font-size: 34px;
-}
-
-.Hero-Section-Text p{
+    font-size: 48px;
+    font-weight: 700;
+    color: #263238;
     margin-bottom: 20px;
 }
 
-.Hero-Section-Image{
-    flex: 1;
-    text-align: center;
+.Hero-Section-Text h1 span{
+    display: block;
+    font-size: 40px;
+    color: #4caf4f;
+    margin-top: 10px;
+}
+
+.Hero-Section-Text p{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.Hero-Section-Text .btn{
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #4caf4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.Hero-Section-Text .btn:hover{
+    background-color: #3d9d40;
 }
 
 .Hero-Section-Image img{
     max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .clint-section{
-    text-align: center;
     padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clint-section h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #263238;
+    margin-bottom: 40px;
+}
+
+.clint-section-text{
+    max-width: 800px;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
 }
 
 .clint-section-img{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 10rem;
     flex-wrap: wrap;
 }
 
 .Community_Section{
+    padding: 20px 0;
+}
+
+.Community_Section h3{
     text-align: center;
-    padding: 40px 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #4caf4f;
+    margin-bottom: 15px;
+}
+
+.Community_Section p{
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
 }
 
 .Community_Section_Cards{
     display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.card{
-    width: 280px;
-    padding: 20px;
+.Community_Section_Cards .card{
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219);
+    transition: 0.3s ease;
+}
+
+.Community_Section_Cards .card:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.Community_Section_Cards .card h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #263238;
+    margin-bottom: 15px;
+}
+
+.Community_Section_Cards .card p{
+    font-size: 16px;
+    color: #555;
 }
 
 .connection-section{
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    align-items: center;
     padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.connection-section .connection-text{
+    max-width: 600px;
+}
+
+.connection-section .connection-text h4{
+    font-size: 32px;
+    font-weight: 700;
+    color: #263238;
+    margin-bottom: 20px;
+}
+
+.connection-section .connection-text p{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.connection-section .connection-text .btn{
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #4caf4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .achivement-section{
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
     padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.achivements{
+.achivement-section .achivement-text{
+    max-width: 600px;
+}
+
+.achivement-section .achivement-text h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #4caf4f;
+    margin-bottom: 20px;
+}
+
+.achivement-section .achivement-text p{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.achivement-section .achivements{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-@media (max-width: 992px){
+.achivement-section .achivements .achivement-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.achivement-section .achivements .achivement-card:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.achivement-heading{
+    font-size: 40px;
+    font-weight: 600;
+    color: #4caf4f;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .header{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .header .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btns{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .Hero-Section{
         flex-direction: column;
         text-align: center;
     }
 
-    .connection-section,
+    .connection-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
     .achivement-section{
         flex-direction: column;
         text-align: center;
     }
-}
 
-@media (max-width: 600px){
-    .logo{
-        font-size: 22px;
+    .Community_Section_Cards{
+        flex-direction: column;
+        align-items: center;
     }
 
+    .clint-section-img{
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px){
     .Hero-Section-Text h1{
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .Hero-Section-Text h1 span{
-        font-size: 22px;
+        font-size: 24px;
     }
 
-    .nav-links{
-        justify-content: center;
+    .clint-section h2,
+    .Community_Section h3,
+    .achivement-heading{
+        font-size: 24px;
+    }
+
+    .container{
+        padding: 15px;
     }
 
     .btns{
-        justify-content: center;
+        gap: 8px;
     }
 }
