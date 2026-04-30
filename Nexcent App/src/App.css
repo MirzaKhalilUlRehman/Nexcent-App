@@ -260,4 +260,34 @@ body{
         align-items: center;
     }
 }
-
+.connection-section{
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.connection-section .connection-text{
+    max-width: 600px;
+}
+.connection-section .connection-text h4{
+    font-size: 32px;
+    font-weight: 700;
+    color: #263238;
+    margin-bottom: 20px;
+}
+.connection-section .connection-text p{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+.connection-section .connection-text .btn{
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #4caf4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}

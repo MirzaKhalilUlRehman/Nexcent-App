@@ -1,8 +1,8 @@
 function Connection() {
   return (
-    <div className="connection">
+    <div className="connection-section container">
       <div className="connection-image">
-        <img src="/assets/Connection.png" alt="Connection" />
+        <img src="/assets/connection.png" alt="Connection" />
       </div>
       <div className="connection-text">
         <h4>The unseen of spending three years at Pixelgrade</h4>
