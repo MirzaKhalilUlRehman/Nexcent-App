@@ -3,6 +3,7 @@ import "./App.css";
 import HeroSection from "./Nexcent Component/HeroSection";
 import ClintsSection from "./Nexcent Component/Clints Section";
 import Community from "./Nexcent Component/Community";
+import Connection from "./Nexcent Component/Connection";
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
       <HeroSection /> 
       <ClintsSection />
       <Community />
+      <Connection />
     </>
   );
 }
